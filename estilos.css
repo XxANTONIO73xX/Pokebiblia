@@ -19,55 +19,53 @@ body {
 /*---------------------------------------------------------------------------------------------------------------------------*/
 
 header nav .nav-bar {
-    border-radius: 55px;
     position: relative;
     margin: 0 auto;
-    top: 15px;
-    width: 95%;
-    height: 80px;
+    top: 0;
+    width: 100%;
+    height: 70px;
     box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.395);
 }
-
 
     header nav .nav-bar ul {
         display: inline-block;
         position: relative;
-        border-radius: 55px;
         margin: 0 auto;
         text-align: center;
         width: 100%;
-        height: 80px;
+        height: 70px;
         background-color: rgb(154, 154, 255);
     }
 
         header nav .nav-bar ul li {
             display: inline-block;
             position: relative;
-            height: 80px;
+            height: 70px;
             width: 18%;
         }
 
-        header nav .nav-bar ul li a {
-            position: relative;
-            display: block;
-            line-height: 80px;
-            height: 80px;
-            transition: .2s;
-            font-size: 30px;
-            color: white;
-        }
-
-            header nav .nav-bar ul li a:hover {
-                background-color: rgb(23, 0, 107);
-                color: white;
+            header nav .nav-bar ul li a {
+                position: relative;
+                display: block;
+                line-height: 70px;
+                height: 70px;
                 transition: .2s;
+                font-size: 30px;
+                color: white;
             }
+
+                header nav .nav-bar ul li a:hover {
+                    background-color: rgb(23, 0, 107);
+                    color: white;
+                    transition: .2s;
+                }
+
 /*---------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------- BODY ------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------------*/
 
 .background_animado .elementos .elemento{
-    opacity: .3;
+    opacity: .1;
     position: absolute;
     left: -15px;
     animation: elementos 3s linear infinite ;
