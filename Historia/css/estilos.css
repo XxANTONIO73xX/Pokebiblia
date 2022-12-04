@@ -1,17 +1,76 @@
-*{
+* {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body{
+body {
     background-color: rgb(7, 7, 100);
+    cursor: url("../images/cursorPoke.cur")
+
 }
 
+body::-webkit-scrollba{
+    user-select: none;
+    overflow: hidden;
+}
 
-.wrapper-body{
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------- HEADER -----------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+header nav .nav-bar {
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.395);
+    z-index: 90;
+}
+
+header nav .nav-bar ul {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(154, 154, 255);
+}
+
+header nav .nav-bar ul li {
+    display: inline-block;
+    position: relative;
+    height: 70px;
+    width: 18%;
+}
+
+header nav .nav-bar ul li a {
+    position: relative;
+    display: block;
+    line-height: 70px;
+    height: 70px;
+    transition: .2s;
+    font-size: 30px;
+    color: white;
+}
+
+header nav .nav-bar ul li a:hover {
+    background-color: rgb(23, 0, 107);
+    color: white;
+    transition: .2s;
+    cursor: url("./images/pointerPoke.cur"), auto;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------- BODY -----------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+.wrapper-body {
+    top: 70px;
     position: relative;
     width: 1000px;
     height: 1500px;
-    margin: 0 auto;
+    margin:  0 auto;
     background-color: white;
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
@@ -20,38 +79,101 @@ body{
 
 }
 
-.wrapper-body .contenido{
+.wrapper-body .contenido {
     position: relative;
     width: 90%;
-    margin: 0 auto;    
+    margin: 0 auto;
 }
 
-.wrapper-body .contenido .history{
+.wrapper-body .contenido .history {
     position: relative;
     width: 850px;
-    height: 450px;
+    height: 550px;
     margin: 0 auto;
     top: auto;
 
 }
 
-.wrapper-body .contenido .history h1{
+.wrapper-body .contenido .history h1 {
     position: relative;
     text-align: center;
-    height: 60px;   
+    height: 100px;
+    top: 40px;
+    color: #2774ba;
 }
 
-.wrapper-body .contenido .history .pokemon-logo img{
-    position: relative;
-    width: 330px;
-    height: 100px;  
-    left: 250px;
-}
-
-.wrapper-body .contenido .history p{
+.wrapper-body .contenido .history p {
     position: relative;
     margin: 0 auto;
     width: 750px;
     text-align: justify;
+    letter-spacing: 1px;
+}
+
+
+.wrapper-body .contenido .history .pokemon-logo {
+    position: relative;
+    width: 850px;
+    height: 200px;
+
+}
+
+.wrapper-body .contenido .history .pokemon-logo img {
+    position: relative;
+    width: 330px;
+    height: 120px;
+    left: 270px;
+    top: 20px;
+
+}
+
+
+
+
+.wrapper-body .contenido .pokemon {
+    position: relative;
+    width: 1000px;
+    height: 470px;
+
+}
+
+.wrapper-body .contenido .pokemon .info {
+    position: relative;
+    height: 440px;
+    float: right;
+    right: 95px;
+    top: 50px;
+}
+
+.wrapper-body .contenido .pokemon .info h3 {
+    position: relative;
+    width: 470px;
+    height: 40px;
+    text-align: center;
+    color: #0a4b88;
+
+}
+
+.wrapper-body .contenido .pokemon .info p {
+    position: relative;
+    width: 470px;
+    height: 350px;
+    text-align: justify;
+    letter-spacing: 1px;
+
+}
+
+.wrapper-body .contenido .pokemon .img-torterra img {
+    position: relative;
+    width: 420px;
+    height: 330px;
+    top: 30px;
+    left: -20px;
+}
+
+.wrapper-body .contenido .pokemon .img-torterra {
+    position: relative;
+    width: 420px;
+    height: 440px;
 
 }
