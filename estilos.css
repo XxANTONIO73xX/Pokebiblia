@@ -308,4 +308,34 @@ transform: translateX(0%);
         0%,  100% {top: 0px;}
         30% {top: -10px;}
     }
+*/
 
+main .inicio {
+    position: absolute;
+    height: 550px;
+    top: 100px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+    main .inicio h1 {
+        color: white;
+        font-size: 60px;
+    }
+
+    main .inicio img {
+        position: relative;
+        margin: 0 auto;
+        height: 90%;
+        width: 400px;
+        animation: salto 1.5s infinite;
+    }
+
+@keyframes salto {
+    0%,  100% {top: 0px;}
+    30% {top: -10px;}
+}
