@@ -83,7 +83,7 @@ header nav .nav-bar {
     color: rgb(55, 20, 78);
 
 }
-
+/*DOCUMENTO DISEÑO*/
 article{
     height: 1000px;
     width: 770px;
@@ -97,6 +97,7 @@ article{
 
 
 }
+
 .titulos{
     color: rgb(214, 235, 76);
     font-size: 40px;
@@ -109,9 +110,15 @@ article{
 main article .primera .juegos,
 main article .segunda .juegos,
 main article .tercera .juegos,
-main article .cuarta .juegos{
+main article .quinta .juegos,
+main article .sexta .juegos,
+main article .septima .juegos,
+main article .octava .juegos,
+main article .novena .juegos,
+
+main article .cuarta .juegos/*{
     width: 770px;
-    height: 900px;
+    height: 800px;
     background: linear-gradient(180deg, rgb(187, 217, 223) 0%, rgba(255, 255, 255, 1) 100%);
     border: 10px solid;
     border-color: #FFFFFF;
@@ -124,9 +131,15 @@ main article .cuarta .juegos{
     color: #3b6b73;
     padding: 30px;
     text-align: center;
-}
+}*/
 
 main article .tercera .juegos {
+    height: 1200px;
+}
+main article .cuarta .juegos {
+    height: 1200px;
+}
+main article .quinta .juegos {
     height: 1200px;
 }
 
