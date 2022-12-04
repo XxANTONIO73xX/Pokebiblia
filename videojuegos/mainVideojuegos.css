@@ -145,6 +145,15 @@ main article .quinta .juegos {
 main article .sexta .juegos {
     height: 1005px;
 }
+main article .septima .juegos {
+    height: 1250px;
+}
+main article .octava .juegos {
+    height: 800px;
+}
+main article .novena .juegos {
+    height: 600px;
+}
 
 .juegos .img_tamano .imagenes{
     position: relative;
