@@ -40,6 +40,10 @@ main .contenedor {
         margin-right: 400px;
     }
 
+    main .contenedor .pokemon_list-box .pokemon_listed audio{
+        display: none;
+    }
+
         main .contenedor .pokemon_list-box .pokemon_listed {
             background-color: red;
             position: relative;
