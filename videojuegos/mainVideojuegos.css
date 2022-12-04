@@ -16,7 +16,7 @@ body{
 }
 
 #contenido{
-    height: 10000px;
+    height: 15000px;
     width: 1000px;
     margin: auto;
     user-select: none;
@@ -116,7 +116,7 @@ main article .septima .juegos,
 main article .octava .juegos,
 main article .novena .juegos,
 
-main article .cuarta .juegos/*{
+main article .cuarta .juegos {
     width: 770px;
     height: 800px;
     background: linear-gradient(180deg, rgb(187, 217, 223) 0%, rgba(255, 255, 255, 1) 100%);
@@ -131,7 +131,7 @@ main article .cuarta .juegos/*{
     color: #3b6b73;
     padding: 30px;
     text-align: center;
-}*/
+}
 
 main article .tercera .juegos {
     height: 1200px;
@@ -140,7 +140,10 @@ main article .cuarta .juegos {
     height: 1200px;
 }
 main article .quinta .juegos {
-    height: 1200px;
+    height: 1000px;
+}
+main article .sexta .juegos {
+    height: 1005px;
 }
 
 .juegos .img_tamano .imagenes{
