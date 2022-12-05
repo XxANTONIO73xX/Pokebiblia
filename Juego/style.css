@@ -1,0 +1,25 @@
+main{
+    position: relative;
+}
+main .gameboy {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: -814px;
+    left: 60px;
+    right: 0;
+    z-index: 10;
+    width: 1199px;
+}
+
+main iframe{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: -611px;
+    left: 60px;
+    right: 0;
+    z-index: 10;
+    width: 620px;
+    height: 467px;
+}

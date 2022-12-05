@@ -495,13 +495,13 @@ document.body.innerHTML = `
             <li><a href="/videojuegos/videojuegos.html">Videojuegos</a></li>
             <li><a href="/pokedex/index.html">PokeDex</a></li>
             <li><a href="/Historia/index.html">Historia</a></li>
-            <li><a href="">Juego</a></li>
+            <li><a href="/Juego/index.html">Juego</a></li>
         </ul>
     </div>
 </nav>
 </header>`;
 
-$(document).ready(function () {
+window.addEventListener('load', function(){
     musicaRomantica = document.getElementById("musicaRomantica");
     musicaRomantica.volume = 0.2;
-});
+})
