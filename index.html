@@ -7,9 +7,10 @@
     <title>Pokemón</title>
     <link rel="stylesheet" href="../estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
+    <script src="jquery/jquery-3.6.1.min.js"></script>
 </head>
 <body>
-    <audio src="/audio/Pokeintro.mp3" autoplay="autoplay" loop="loop"></audio>
+    <audio id="musicaRomantica" src="/audio/Pokeintro.mp3" autoplay="autoplay" loop="loop"></audio>
     <div class="background">
         <div class="columnas">
             <div class="columna">
@@ -514,5 +515,11 @@
             <h1>¡Pokebendiciones para todos!</h1>
         </div>
     </main>
+    <script>
+        $(document).ready(function () {
+            musicaRomantica = document.getElementById("musicaRomantica");
+            musicaRomantica.volume = 0.2;
+        });
+    </script>
 </body>
 </html>

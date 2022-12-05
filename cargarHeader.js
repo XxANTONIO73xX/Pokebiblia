@@ -1,7 +1,7 @@
 document.body.innerHTML = `
 <link rel="stylesheet" href="../estilos.css">
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
-<audio src="/audio/Pokeintro.mp3" autoplay="autoplay" loop="loop"></audio>
+<audio id="musicaRomantica" src="/audio/Pokeintro.mp3" autoplay="autoplay" loop="loop"></audio>
 <div class="background">
 <div class="columnas">
     <div class="columna">
@@ -499,4 +499,9 @@ document.body.innerHTML = `
         </ul>
     </div>
 </nav>
-</header>`
+</header>`;
+
+$(document).ready(function () {
+    musicaRomantica = document.getElementById("musicaRomantica");
+    musicaRomantica.volume = 0.2;
+});
