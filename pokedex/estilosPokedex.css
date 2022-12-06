@@ -12,22 +12,45 @@ main .contenedor {
 
     main .contenedor .search_bar {
         position: relative;
-        background-color: blue;
         top: 90px;
-        width: 90%;
-        height: 50px;
-        border-radius: 10px;
-        border: none;
+        width: 100%;
+        height: 40px;
     }
 
-    main .contenedor .search_button{
-        position: absolute;
-        top: 90px;
-        right: 10px;
-        width: 50px;
-        height: 50px;
-        cursor: url("../images/cursor64.cur"), auto;
-    }
+        main .contenedor .search_bar .search {
+            position: relative;
+            background-color: rgb(79, 79, 255);
+            width: 90%;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            font-size: 40px;
+            padding-left: 20px;
+            color: white;
+        }
+
+        main .contenedor .search_bar .search:focus {
+            animation: brilloSearch 1s infinite;
+        }
+
+        main .contenedor .search_bar .search_button {
+            position: absolute;
+            background-color: blue;
+            border: none;
+            border-radius: 10px;
+            right: 0;
+            width: 9%;
+            height: 50px;
+            cursor: url("../images/cursor64.cur"), auto;
+        }
+
+            main .contenedor .search_bar .search_button:hover {
+                background-color: red;
+            }
+
+            main .contenedor .search_bar .search_button img {
+                height: 100%;
+            }
 
     main .contenedor .pokemon_list-box {
         background-color: blue;
@@ -114,11 +137,21 @@ main .contenedor {
                 display: none;
             }
 
+@keyframes brilloSearch {
+    0%, 100% {outline: none;
+        transition: 0.25s;}
+    50% {
+        outline: 1px solid white;
+        transition: 0.25s;
+    }
+}
+
 @keyframes efecto {
     0%,  100% { right: 0px;
                 box-shadow: 5px 5px 7px 2px rgba(0, 0, 0, 0.412);}
     30% {   right: 10px;
-        box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.412);}
+        box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.412);
+    }
 }
 
 /* Estilos de la pokedex*/
@@ -170,25 +203,29 @@ main .contenedor-pokedex .pokedex .informacion-pokemon{
 
 .nombre_pokemon{
     position: absolute;
+    text-transform: uppercase;
     font-size: 35px;
+    text-align: center;
+    width: 150px;
+    height: auto;
     top: 140px;
-    left: 140px;
+    left: 144px;
 }
 
 .descripcion_pokemon{
     position: absolute;
-    font-size: 20px;
+    font-size: 17px;
     width: 240px;
-    top: 290px;
-    left: 35px;
+    top: 310px;
+    left:35px;
     text-align: justify;
 }
 
 .categoria_pokemon{
     position: absolute;
     font-size: 20px;
-    width: 240px;
-    top: 260px;
+    width: 260px;
+    top: 290px;
     left: 35px;
 }
 
