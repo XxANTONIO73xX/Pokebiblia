@@ -1,11 +1,21 @@
-
+main{
+    position: relative;
+    z-index: 10;
+    overflow-x: scroll;
+}
 .contenido{
-    margin:auto;
+    position: absolute;
+    top: 83px;
+    left: 282px;
+    margin: auto;
     width: 960px;
-    height: 800px;
+    height: 680px;
     background-color: gainsboro;
 }
 
+main::-webkit-scrollbar{
+    overflow-x: scroll;
+}
 .tipos_pokemon{
     color :purple;
 }

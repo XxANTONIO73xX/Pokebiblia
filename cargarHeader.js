@@ -491,7 +491,7 @@ document.body.innerHTML = `
 <nav>
     <div class="nav-bar">
         <ul>
-            <li><a href="">Anime</a></li>
+            <li><a href="/anime/anime.html">Anime</a></li>
             <li><a href="/videojuegos/videojuegos.html">Videojuegos</a></li>
             <li><a href="/pokedex/index.html">PokeDex</a></li>
             <li><a href="/Historia/index.html">Historia</a></li>

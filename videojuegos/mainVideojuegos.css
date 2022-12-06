@@ -16,7 +16,9 @@ body{
 }
 
 #contenido{
-    height: 15000px;
+    position: relative;
+    top: -695px;
+    height: 680px;
     width: 1000px;
     margin: auto;
     user-select: none;
@@ -24,48 +26,6 @@ body{
     background-color: rgb(131, 137, 166);
 }
 
-
-header nav .nav-bar {
-    position: relative;
-    margin: 0 auto;
-    top: 0;
-    width: 100%;
-    height: 70px;
-    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.395);
-}
-
-    header nav .nav-bar ul {
-        display: inline-block;
-        position: relative;
-        margin: 0 auto;
-        text-align: center;
-        width: 100%;
-        height: 70px;
-        background-color: rgb(154, 154, 255);
-    }
-
-        header nav .nav-bar ul li {
-            display: inline-block;
-            position: relative;
-            height: 70px;
-            width: 18%;
-        }
-
-            header nav .nav-bar ul li a {
-                position: relative;
-                display: block;
-                line-height: 70px;
-                height: 70px;
-                transition: .2s;
-                font-size: 30px;
-                color: white;
-            }
-
-                header nav .nav-bar ul li a:hover {
-                    background-color: rgb(23, 0, 107);
-                    color: white;
-                    transition: .2s;
-                }
 .lado_izq{
     height: 10000px;
     width: 100px;
@@ -85,17 +45,18 @@ header nav .nav-bar {
 }
 /*DOCUMENTO DISEÑO*/
 article{
-    height: 1000px;
-    width: 770px;
+    height: 695px;
+    width: 100%;
     background-color: rgb(131, 137, 166);
     float: left;
+    margin: 0 auto;
     margin-top: 15px;
     margin-left: 15px;
     margin-right: 15px;
     font-family: 'VT323', monospace;
     font-size: 25px;
-
-
+    overflow: scroll;
+    padding-bottom: 40px;
 }
 
 .titulos{
@@ -122,7 +83,6 @@ main article .cuarta .juegos {
     background: linear-gradient(180deg, rgb(187, 217, 223) 0%, rgba(255, 255, 255, 1) 100%);
     border: 10px solid;
     border-color: #FFFFFF;
-    float: left;
     position: relative;
     top: 6px;
     right: 0px;
