@@ -34,18 +34,8 @@ main .contenedor {
         overflow-x: scroll;
     }
 
-    main .contenedor .pokemon_list-box .pokemon_listed .info{
-        float: right;
-        font-size: 30px;
-        margin-right: 400px;
-    }
-
-    main .contenedor .pokemon_list-box .pokemon_listed audio{
-        display: none;
-    }
-
         main .contenedor .pokemon_list-box .pokemon_listed {
-            background-color: red;
+            background-color: rgb(110, 168, 255);
             position: relative;
             margin: 0 auto;
             top: 20px;
@@ -53,14 +43,62 @@ main .contenedor {
             height: 100px;
             border-radius: 10px;
             margin-bottom: 10px;
-            transition: 0.3s;
+            transition: 0.25s;
             border: 3px solid black;
+            box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
             cursor: url("../images/pointerPoke.cur"), auto;
         }
 
             main .contenedor .pokemon_list-box .pokemon_listed:hover{
-                animation: efecto 0.8s infinite;
+                animation: efecto 1.1s infinite;
                 cursor: url("../images/pointerPoke.cur"), auto;
+                box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.199);
+                transition: 0.25s;
+                cursor: ;
+            }
+
+            main .contenedor .pokemon_list-box .pokemon_listed .imagen {
+                background-color: rgba(215, 255, 142, 0.623);
+                width: 140px;
+                height: 100%;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                float: left;
+            }
+
+            main .contenedor .pokemon_list-box .pokemon_listed .imagen img {
+                position: relative;
+                margin-left: 10%;
+            }
+
+            main .contenedor .pokemon_list-box .pokemon_listed .info {
+                float: left;
+                position: relative;
+                font-size: 20px;
+                width: 81.06%;
+                height: 100%;
+            }
+
+                main .contenedor .pokemon_list-box .pokemon_listed .info .name {
+                    position: relative;
+                    background-color: rgba(69, 97, 252, 0.699);
+                    border-top-right-radius: 8px;
+                    text-align:center;
+                    text-transform: uppercase;
+                    font-weight: 200;
+                    letter-spacing: 5px;
+                    color: white;
+                }
+
+                main .contenedor .pokemon_list-box .pokemon_listed .info .weight, 
+                main .contenedor .pokemon_list-box .pokemon_listed .info .height {
+                    position: relative;
+                    left: 10px;
+                    top: 5px;
+                }
+        
+            main .contenedor .pokemon_list-box .pokemon_listed audio{
+                display: none;
             }
 
 @keyframes efecto {
