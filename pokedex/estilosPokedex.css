@@ -57,12 +57,14 @@ main .contenedor {
             }
 
             main .contenedor .pokemon_list-box .pokemon_listed .imagen {
-                background-color: rgba(215, 255, 142, 0.623);
+                background-color: rgb(208, 255, 122);
                 width: 140px;
                 height: 100%;
                 border-top-left-radius: 5px;
                 border-bottom-left-radius: 5px;
                 float: left;
+                z-index: 9000;
+                position: absolute;
             }
 
             main .contenedor .pokemon_list-box .pokemon_listed .imagen img {
@@ -72,17 +74,20 @@ main .contenedor {
 
             main .contenedor .pokemon_list-box .pokemon_listed .info {
                 float: left;
-                position: relative;
+                position: absolute;
+                text-align: center;
                 font-size: 20px;
-                width: 81.06%;
+                width: 100%;
                 height: 100%;
+                z-index: 8000;
             }
 
                 main .contenedor .pokemon_list-box .pokemon_listed .info .name {
                     position: relative;
                     background-color: rgba(69, 97, 252, 0.699);
                     border-top-right-radius: 8px;
-                    text-align:center;
+                    border-top-left-radius: 8px;
+                    text-align: center;
                     text-transform: uppercase;
                     font-weight: 200;
                     letter-spacing: 5px;
