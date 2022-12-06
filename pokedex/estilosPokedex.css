@@ -45,14 +45,14 @@ main .contenedor {
             margin-bottom: 10px;
             transition: 0.25s;
             border: 3px solid black;
-            box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.8);
             cursor: url("../images/pointerPoke.cur"), auto;
         }
 
             main .contenedor .pokemon_list-box .pokemon_listed:hover{
                 animation: efecto 1.1s infinite;
                 cursor: url("../images/pointerPoke.cur"), auto;
-                box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.412);
+                box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.412);
                 transition: 0.25s;
             }
 
@@ -106,7 +106,9 @@ main .contenedor {
             }
 
 @keyframes efecto {
-    0%,  100% {right: 0px;}
-    30% {right: 10px;}
+    0%,  100% { right: 0px;
+                box-shadow: 5px 5px 7px 2px rgba(0, 0, 0, 0.412);}
+    30% {   right: 10px;
+        box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.412);}
 }
 
