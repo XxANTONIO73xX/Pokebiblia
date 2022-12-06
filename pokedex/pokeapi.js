@@ -13,7 +13,7 @@ $.ajax({
             dataType: "json",
         }).done(function(pokemonData){
             $("#pokemon-list").append(`
-            <div class="pokemon_listed" id="listado" onclick="getPokemon('${url}')">
+            <div class="pokemon_listed" id="listado" onclick="getPokemon('${pokemonData.name}')">
                 <img src="${pokemonData.sprites.front_default}" width=110px" height="90px">
                 <div class="info">
                     <p>Nombre:${pokemonData.name}</p>
@@ -31,12 +31,12 @@ $(document).on('mouseenter', "#listado", function(){
     audio[0].play();
 })
 
-function getPokemon(url){
+function getPokemon(name){
     $(".contenedor").animate({right: '630px'}, 'slow');
     $(".contenedor-pokedex").animate({right: '10px'}, 'slow');
     $.ajax({
         type: "GET",
-        url: url,
+        url: "https://pokeapi.co/api/v2/pokemon/"+ name,
         data: "",
         dataType: "json",
     }).done(function(pokemonData){
@@ -95,3 +95,28 @@ $(".close").click(function (e) {
     $(".contenedor").animate({right: '0'}, 'slow');
     $(".contenedor-pokedex").animate({right: '-1000px'}, 'slow');
 });
+
+$("#buscar").click(function(){
+    param = $("#param").val();
+    console.log(param)
+    $.ajax({
+        type: "GET",
+        url: "https://pokeapi.co/api/v2/pokemon/" + param,
+        data: "",
+        dataType: "json"
+    }).done(function(pokemonData){
+        $("#pokemon-list").html(`
+        <div class="pokemon_listed" id="listado" onclick="getPokemon('${pokemonData.name}')">
+        <img src="${pokemonData.sprites.front_default}" width=110px" height="90px">
+        <div class="info">
+            <p>Nombre:${pokemonData.name}</p>
+            <p>Peso:${pokemonData.weight}</p>
+            <p>Altura:${pokemonData.height}</p>
+        </div>
+        <audio src="../audio/menu-efect.mp3" id="menu-audio-efecto"></audio>
+    </div>
+        `)
+    }).fail(function(){
+        alert("no se encontro: " + param)
+    })
+})

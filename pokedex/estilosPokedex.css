@@ -14,10 +14,19 @@ main .contenedor {
         position: relative;
         background-color: blue;
         top: 90px;
-        width: 100%;
+        width: 90%;
         height: 50px;
         border-radius: 10px;
         border: none;
+    }
+
+    main .contenedor .search_button{
+        position: absolute;
+        top: 90px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        cursor: url("../images/cursor64.cur"), auto;
     }
 
     main .contenedor .pokemon_list-box {
