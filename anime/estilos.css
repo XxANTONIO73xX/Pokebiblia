@@ -5,10 +5,12 @@ main{
 }
 .contenido{
     position: absolute;
-    top: 83px;
-    left: 282px;
-    margin: auto;
-    width: 960px;
+    top: 90px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 980px;
     height: 680px;
     background-color: gainsboro;
 }
@@ -19,7 +21,31 @@ main::-webkit-scrollbar{
 .tipos_pokemon{
     color :purple;
 }
-
+.El_anime{
+    color: purple;
+}
+.Anime_television{
+    color: purple;
+}
+.series{
+    color: purple;
+}
+.personajes{
+    width: 100%;
+    position: relative;
+    background-color: red;
+}
+.personajes .texto_personajes{
+    width: 50%;
+    float: left;
+}
+.personajes .imagen_personajes{
+    width: 50%;
+    float:left;
+}
+.personajes .imagen_personajes img{
+    width: 100%;
+}
 .slider{
     width: 95%;
     margin: auto;
