@@ -11,53 +11,174 @@
 body{
     user-select: none;
     background-color: rgb(0, 0, 154);
-    margin-top: 15px;
 }
 
-#contenido{
-    position: relative;
-    top: -635px;
+.contenedor {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
     height: 680px;
     width: 1000px;
-    margin: auto;
+    overflow: scroll;
+    overflow-x: hid;
     user-select: none;
-    overflow: hidden;
-    background-color: rgb(131, 137, 166);
+    background-color: rgb(173, 187, 255);
 }
 
-.lado_izq{
-    height: 10000px;
-    width: 100px;
-    background-color: rgb(42, 145, 185);
-    float: left;
-}
-.lado_der{
-    height: 10000px;
-    width: 100px;
-    background-color: rgb(42, 145, 185);
-    float: right;
-}
-.inicion_pokemon{
-    font-family: Helvetica, Arial, sans-serif;
+    .contenedor main .inicio_pokemon,
+    .contenedor main .principales {
+        position: relative;
+        height: auto;
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .contenedor main h1 {
+        text-align: center;
+        color: yellow;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contenedor main p {
+        position: relative;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+.inicio_pokemon{
     color: rgb(55, 20, 78);
-
 }
+
 /*DOCUMENTO DISEÑO*/
-article{
+
+.contenedor main article {
+    position: relative;
+    top: 10px;
     height: 695px;
     width: 100%;
-    background-color: rgb(131, 137, 166);
     float: left;
     margin: 0 auto;
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
     font-family: 'VT323', monospace;
     font-size: 25px;
-    overflow: scroll;
     padding-bottom: 40px;
 }
 
+    .contenedor main article .juegos_box {
+        position: absolute;
+        top: 270px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        width: 770px;
+        height: auto;
+        background: linear-gradient(180deg, rgb(187, 217, 223) 0%, rgba(255, 255, 255, 1) 100%);
+        border: 10px solid;
+        border-color: #FFFFFF;
+        border-radius: 5px;
+        box-shadow: -1px 3px 18px -1px rgba(0, 0, 0, 0);
+        color: #3b6b73;
+        padding: 20px;
+        text-align: center;
+    }
+
+        .contenedor main article .juegos_box h1 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+    .contenedor main article .primera,
+    .contenedor main article .novena,
+    .contenedor main article .segunda {
+        position: relative;
+        height: 1050px;
+    }
+
+    .contenedor main article .octava {
+        position: relative;
+        height: 1100px;
+    }
+
+    .contenedor main article .tercera,
+    .contenedor main article .sexta,
+    .contenedor main article .quinta {
+        position: relative;
+        height: 1200px;
+    }
+
+    .contenedor main article .septima,
+    .contenedor main article .cuarta {
+        position: relative;
+        height: 1460px;
+    }
+
+        .contenedor main article .tercera .juegos_box,
+        .contenedor main article .quinta .juegos_box,
+        .contenedor main article .sexta .juegos_box,
+        .contenedor main article .septima .juegos_box,
+        .contenedor main article .cuarta .juegos_box {
+            position: absolute;
+            top: 210px;
+        }
+
+    .contenedor main article .juegos_box .info_juegos {
+        position: relative;
+        top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .contenedor main article .juegos_box .info_juegos .juego {
+        position: relative;
+        margin: 0 auto;
+        top: 10px;
+        margin-top: 5px;
+        width: 90%;
+        height: 190px;
+        background-color: rgba(255, 0, 0, 0.107);
+    }
+
+        .contenedor main article .juegos_box .info_juegos .juego .imagen {
+            width: 40%;
+            height: 100%;
+            float: left;
+        }
+
+            .contenedor main article .juegos_box .info_juegos .juego .imagen img {
+                width: 100%;
+                height: 100%;
+                float: left;
+            }
+
+        .contenedor main article .juegos_box .info_juegos .juego .info {
+            width: 60%;
+            height: 100%;
+            float: left;
+        }
+
+            .contenedor main article .juegos_box .info_juegos .juego .info .juego_name {
+                font-size: 40px;
+                transition: 1.2s;
+            }
+
+                .contenedor main article .juegos_box .info_juegos .juego .info .juego_name:hover {
+                    color: rgb(255, 217, 0);
+                    background-color: rgba(255, 0, 0, 0.444);
+                    transition: 0.5s;
+                }
+
+            .contenedor main article .juegos_box .info_juegos .juego .info p {
+                position: relative;
+                top: 20px;
+                width: 80%;
+            }
+
+/*
 .titulos{
     color: rgb(214, 235, 76);
     font-size: 40px;
