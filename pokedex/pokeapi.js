@@ -14,11 +14,13 @@ $.ajax({
         }).done(function(pokemonData){
             $("#pokemon-list").append(`
             <div class="pokemon_listed" id="listado" onclick="getPokemon('${pokemonData.name}')">
+            <div class="imagen">
                 <img src="${pokemonData.sprites.front_default}" width=110px" height="90px">
-                <div class="info">
-                    <p>Nombre:${pokemonData.name}</p>
-                    <p>Peso:${pokemonData.weight}</p>
-                    <p>Altura:${pokemonData.height}</p>
+            </div>
+            <div class="info">
+                    <p class="name">${pokemonData.name}</p>
+                    <p class="weight">Peso:${pokemonData.weight}</p>
+                    <p class="height">Altura:${pokemonData.height}</p>
                 </div>
                 <audio src="../audio/menu-efect.mp3" id="menu-audio-efecto"></audio>
             </div>`)
