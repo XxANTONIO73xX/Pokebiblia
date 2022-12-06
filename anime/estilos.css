@@ -46,6 +46,9 @@ main::-webkit-scrollbar{
 .personajes .imagen_personajes img{
     width: 100%;
 }
+
+/* aqui comienza el slider*/
+
 .slider{
     width: 95%;
     margin: auto;
@@ -58,6 +61,7 @@ main::-webkit-scrollbar{
     width: 400%;
 
     animation: cambio 20s infinite;
+    animation-direction: alternate;
 }
 
 .slider li{
@@ -72,13 +76,10 @@ main::-webkit-scrollbar{
 @keyframes cambio {
     0%{margin-left: 0;}
     20%{margin-left: 0;}
-
     25%{margin-left: -100%;}
     45%{margin-left: -100%;}
-
     50%{margin-left: -200%;}
     70%{margin-left: -200%;}
-
     75%{margin-left: -300%;}
     100%{margin-left: -300%;}
 }
