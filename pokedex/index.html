@@ -17,6 +17,42 @@
                 
             </div>
         </div>
+        <div class="contenedor-pokedex">
+            <div class="pokedex">
+                <img src="../images/pokedex.png" alt="imagen de una pokedex">
+                <div class="close"><img src="img/cancel.png" alt="boton para cerrar"></div>
+                <img id="sprite" class="sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Imagen del pokemon">
+                <p class="nombre_pokemon" id="nombre"></p>
+                <p class="descripcion_pokemon" id="Descripcion"></p>
+                <p class="categoria_pokemon" id="categoria"></p>
+                <div class="peso_altura">
+                    <p class="altura_pokemon" id="altura"></p>
+                    <p class="peso_pokemon" id="peso"></p>
+                </div>
+                <div class="informacion-pokemon">
+                    <table>
+                        <tr>
+                            <td>Experiencia</td>
+                            <td id="experiencia">49</td>
+                        </tr>
+                        <tr>
+                            <td>Felicidad</td>
+                            <td id="felicidad">90</td>
+                        </tr>
+                        <tr>
+                            <td>Tasa de captura</td>
+                            <td id="captura">49</td>
+                        </tr>
+                    </table>
+                    <p class="tipos">Tipos:</p>
+                    <ul id="tipos">
+                    </ul>
+                    <p class="estadisticas">Estadisticas</p>
+                    <ul id="estadisticas">
+                    </ul>
+                </div>
+            </div>
+        </div>
         <script src="pokeapi.js"></script>
 </body>
 </html>
