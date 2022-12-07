@@ -16,10 +16,42 @@ main iframe{
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: -550px;
+    top: -530px;
     left: 60px;
     right: 0;
     z-index: 10;
     width: 500px;
     height: 385px;
+}
+
+@media (max-width: 1440px){
+    main .gameboy{
+        top: -670px;
+    }
+    main iframe{
+        top: -500px;
+    }
+}
+
+@media (max-width: 768px){
+    main{
+        width: 100%;
+    }
+    main .gameboy{
+        display: none;
+    }
+
+    main iframe{
+        top: -540px;
+        width: 90%;
+        height: 500px;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 426px){
+    main iframe{
+        left: 0px;
+        margin: 0 auto;
+    }
 }
