@@ -160,22 +160,49 @@ main .inicio {
     position: absolute;
     height: 550px;
     top: 100px;
-    width: 1000px;
-    margin-left: auto;
+    width: 570px;
+    margin-left: 0;
     margin-right: auto;
     left: 0;
-    right: 0;
+    right: 540px;
     text-align: center;
 }
 
-    main .inicio h1 {
-        color: white;
+main .descripcion{
+    position: absolute;
+    height: 550px;
+    top: 150px;
+    width: 670px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 340px;
+    right: 0;
+    color: white;
+    text-align: center;
+}
+
+main .descripcion .titulo{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+main .descripcion section article p{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+main .descripcion section article h3{
+    font-size: 35px;
+    color: crimson;
+}
+
+    main .inicio h2{
+        color: crimson;
         font-size: 60px;
     }
 
     main .inicio img {
         position: relative;
-        margin: 0 auto;
         height: 90%;
         width: 400px;
         animation: salto 1.5s infinite;
