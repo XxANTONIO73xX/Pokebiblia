@@ -11,7 +11,7 @@
 body {
     user-select: none;
     overflow: hidden;
-    background-color: rgb(0, 0, 154);
+    background-color: rgb(116, 154, 0);
     cursor: url("./images/cursor64.cur"), auto;
 }
 
@@ -24,33 +24,48 @@ header nav .nav-bar {
     margin: 0 auto;
     top: 0;
     width: 100%;
-    height: 70px;
-    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.395);
+    height: 160px;
+    box-shadow: 5px 4px 2px 0px rgba(0, 0, 0, 0.43);
     z-index: 90;
+    background-color: rgb(154, 154, 255);
 }
+
+    header nav .nav-bar .logo_page {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 120px;
+        text-align: center;
+        background-color: rgb(0, 39, 139);
+    }
+
+        header nav .nav-bar .logo_page img {
+            height: 105px;
+        }
 
     header nav .nav-bar ul {
         display: inline-block;
         position: relative;
+        top: 120px;
         margin: 0 auto;
         text-align: center;
         width: 100%;
-        height: 70px;
+        height: 40px;
         background-color: rgb(154, 154, 255);
     }
 
         header nav .nav-bar ul li {
             display: inline-block;
             position: relative;
-            height: 70px;
-            width: 18%;
+            height: 40px;
+            width: 19%;
         }
 
             header nav .nav-bar ul li a {
                 position: relative;
                 display: block;
-                line-height: 70px;
-                height: 70px;
+                line-height: 40px;
+                height: 40px;
                 transition: .2s;
                 font-size: 30px;
                 color: white;
@@ -67,134 +82,9 @@ header nav .nav-bar {
 /*--------------------------------------------------------- BODY ------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------------*/
 
-/*
-.background_animado .elementos .elemento{
-    opacity: .1;
-    position: absolute;
-    left: -15px;
-    animation: elementos 3s linear infinite ;
-    pointer-events: none;
-}
-
-    .background_animado .elementos .elemento img {
-        width: 70px;
-    }
-
-    .background_animado .elementos .elemento:nth-child(1){
-        width: 80px;
-        height: 80px;
-        left: 5%;
-        animation-duration: 3s;
-        animation-delay: 3s;
-    }
-
-    .background_animado .elementos .elemento:nth-child(2){
-        width: 100px;
-        height: 100px;
-        left: 35%;
-        animation-duration: 3s;
-        animation-delay: 5s;
-    }
-
-    .background_animado .elementos .elemento:nth-child(3){
-        width: 20px;
-        height: 20px;
-        left: 15%;
-        animation-duration: 1.5s;
-        animation-delay: 7s;
-    }
-
-    .background_animado .elementos .elemento:nth-child(4){
-        width: 50px;
-        height: 50px;
-        left: 90%;
-        animation-duration: 6s;
-        animation-delay: 3s;
-    }
-
-    .background_animado .elementos .elemento:nth-child(5){
-        width: 70px;
-        height: 70px;
-        left: 65%;
-        animation-duration: 3s;
-        animation-delay: 1s;
-    }
-
-    .background_animado .elementos .elemento:nth-child(6){
-        width: 20px;
-        height: 20px;
-        left: 50%;
-        animation-duration: 4s;
-        animation-delay: 1s;
-    }
-
-    .background_animado .elementos .elemento:nth-child(7){
-        width: 20px;
-        height: 20px;
-        left: 50%;
-        animation-duration: 4s;
-        animation-delay: 5s;
-    }
-
-    .background_animado .elementos .elemento:nth-child(8){
-        width: 100;
-        height: 100px;
-        left: 52%;
-        animation-duration: 5s;
-        animation-delay: 5s;
-    }
-
-    .background_animado .elementos .elemento:nth-child(9){
-        width: 65px;
-        height: 65px;
-        left: 51%;
-        animation-duration: 3s;
-        animation-delay: 2s;
-    }
-
-    .background_animado .elementos .elemento:nth-child(10){
-        width: 40px;
-        height: 40px;
-        left: 35%;
-        animation-duration: 3s;
-        animation-delay: 4s;
-    }
-
-
-@keyframes elementos{
-    0%{
-        bottom: 0;
-        opacity: 0;
-    }
-    30%{
-        transform: translateX(30px);
-    }
-    50%{
-        opacity: .4;
-    }
-    100%{
-        bottom: 100vh;
-        opacity: 0;
-    }
-}
-
-@keyframes movimiento{
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(30px);
-    }
-    100%{
-        transform: translateY(0);
-    }
-}*/
-
-
 .background {
     width: 100%;
     height: 100vh;
-    background: rgba(31, 0, 64, 0.241);
     display: flex;
     flex-direction: column;
     overflow: hidden;

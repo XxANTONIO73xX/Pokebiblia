@@ -488,17 +488,20 @@ document.body.innerHTML = `
 </div>        
 </div>
 <header>
-<nav>
-    <div class="nav-bar">
-        <ul>
-            <li><a href="/anime/anime.html">Anime</a></li>
-            <li><a href="/videojuegos/videojuegos.html">Videojuegos</a></li>
-            <li><a href="/pokedex/index.html">PokeDex</a></li>
-            <li><a href="/Historia/index.html">Historia</a></li>
-            <li><a href="/Juego/index.html">Juego</a></li>
-        </ul>
-    </div>
-</nav>
+    <nav>
+        <div class="nav-bar">
+            <div class="logo_page">
+                <img src="/images/pokeLogo.png">
+            </div>
+            <ul>
+                <li><a href="/anime/anime.html">Anime</a></li>
+                <li><a href="/videojuegos/videojuegos.html">Videojuegos</a></li>
+                <li><a href="/pokedex/index.html">PokeDex</a></li>
+                <li><a href="/Historia/index.html">Historia</a></li>
+                <li><a href="/Juego/index.html">Juego</a></li>
+            </ul>
+        </div>
+    </nav>
 </header>`;
 
 window.addEventListener('load', function(){
