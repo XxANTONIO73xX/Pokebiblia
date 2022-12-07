@@ -30,7 +30,7 @@ header nav .nav-bar {
     box-shadow: 5px 4px 2px 0px rgba(0, 0, 0, 0.43);
     z-index: 90;
     background: rgb(255,255,255);
-    background: linear-gradient(127deg, rgba(255,255,255,1) 10%, rgba(181,185,255,1) 30%, rgba(214,58,111,1) 57%, rgba(255,0,0,1) 90%);
+    background: linear-gradient(151deg, rgba(255,255,255,1) 15%, rgba(68,197,240,1) 30%, rgba(60,60,237,1) 45%, rgba(232,40,40,1) 60%, rgba(255,0,0,1) 90%);
 }
 
     header nav .nav-bar img {
@@ -49,8 +49,6 @@ header nav .nav-bar {
         text-align: center;
         width: 70%;
         height: 50px;
-        background: rgb(255,255,255);
-        background: linear-gradient(127deg, rgba(255,255,255,1) 10%, rgba(181,185,255,1) 30%, rgba(214,58,111,1) 57%, rgba(255,0,0,1) 90%);
     }
 
         header nav .nav-bar ul li {
@@ -67,12 +65,12 @@ header nav .nav-bar {
                 height: 50px;
                 transition: .2s;
                 font-size: 30px;
-                color: rgb(0, 0, 0);
+                color: white;
             }
 
                 header nav .nav-bar ul li a:hover {
-                    background-color: rgb(23, 0, 107);
-                    color: white;
+                    background-color: rgb(4, 193, 187);
+                    color: black;
                     transition: .2s;
                     cursor: url("./images/pointerPoke.cur"), auto;
                 }
