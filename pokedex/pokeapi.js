@@ -34,8 +34,9 @@ $(document).on('mouseenter', "#listado", function(){
 })
 
 function getPokemon(name){
-    $(".contenedor").animate({right: '630px'}, 'slow');
+    $(".contenedor").animate({right: '670px'}, 'slow');
     $(".contenedor-pokedex").animate({right: '10px'}, 'slow');
+    $(".pokedex-descripcion").animate({left: '0'}, 'slow');
     $.ajax({
         type: "GET",
         url: "https://pokeapi.co/api/v2/pokemon/"+ name,
@@ -95,6 +96,9 @@ function getPokemon(name){
 
 $(".close").click(function (e) { 
     $(".contenedor").animate({right: '0'}, 'slow');
+    $(".pokedex-descripcion").animate({left: '340px'}, 'slow');
+    $(".pokedex-descripcion h1").animate({'text-align': 'center'}, 'slow');
+    $(".pokedex-descripcion article h2").animate({'text-align': 'center'}, 'slow');
     $(".contenedor-pokedex").animate({right: '-1000px'}, 'slow');
 });
 
@@ -124,3 +128,14 @@ $("#buscar").click(function(){
         alert("no se encontro: " + param)
     })
 })
+
+$(".search_button").hover(function () {
+        // over
+        img = $(".search_button img")[0];
+        img.src = "./img/lupa.png";
+    }, function () {
+        // out
+        img = $(".search_button img")[0];
+        img.src = "./img/lupa black.png";
+    }
+);

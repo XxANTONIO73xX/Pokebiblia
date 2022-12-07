@@ -2,7 +2,7 @@ main .contenedor {
     position: absolute;
     margin-left:auto;
     margin-right:auto;
-    top: -20px;
+    top: 240px;
     left:0;
     right:0;
     width: 800px;
@@ -19,14 +19,14 @@ main .contenedor {
 
         main .contenedor .search_bar .search {
             position: relative;
-            background-color: rgb(79, 79, 255);
+            background-color: rgb(255, 255, 255);
             width: 90%;
             height: 50px;
             border-radius: 10px;
             border: none;
             font-size: 40px;
             padding-left: 20px;
-            color: white;
+            color: black;
         }
 
         main .contenedor .search_bar .search:focus {
@@ -35,7 +35,7 @@ main .contenedor {
 
         main .contenedor .search_bar .search_button {
             position: absolute;
-            background-color: blue;
+            background-color: white;
             border: none;
             border-radius: 10px;
             right: 0;
@@ -49,7 +49,7 @@ main .contenedor {
             }
 
             main .contenedor .search_bar .search_button img {
-                height: 100%;
+                height: 70%;
             }
 
     main .contenedor .pokemon_list-box {
@@ -57,7 +57,7 @@ main .contenedor {
         position: relative;
         top: 110px;
         width: 100%;
-        height: 550px;
+        height: 350px;
         border-radius: 10px;
         overflow-x: hidden;
     }
@@ -141,7 +141,7 @@ main .contenedor {
     0%, 100% {outline: none;
         transition: 0.25s;}
     50% {
-        outline: 1px solid white;
+        outline: 3px solid black;
         transition: 0.25s;
     }
 }
@@ -158,7 +158,7 @@ main .contenedor {
 
 main .contenedor-pokedex{
     position: relative;
-    top: -600px;
+    top: -900px;
     right: -1000px;
     width: 650px;
     height: 600px;
@@ -189,6 +189,7 @@ main .contenedor-pokedex .pokedex .close:hover{
 main .contenedor-pokedex .pokedex .sprite{
     position: absolute;
     width: 110px;
+    height: 100px;
     right: 510px;
     top: 140px;
 }
@@ -251,4 +252,34 @@ main .contenedor-pokedex .pokedex .informacion-pokemon ul li{
     display: inline-block;
     margin-right: 10px;
     border: 1px solid;
+}
+
+
+/*estilos del texto de relleno*/
+
+main .pokedex-descripcion{
+    position: relative;
+    top: -710px;
+    left: 340px;
+    color: white;
+    padding: 20px;
+    width: 870px;
+}
+
+main .pokedex-descripcion h1{
+    font-size: 70px;
+    text-shadow: grey -6px 8px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main .pokedex-descripcion article h2{
+    font-size: 40px;
+    text-shadow: grey -3px 4px;
+    text-align: center;
+}
+
+main .pokedex-descripcion article p{
+    font-size: 30px;
+    text-align: justify;
 }
