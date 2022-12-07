@@ -207,8 +207,65 @@ body{
             tr:nth-of-type(10) > th {
                 background-color: rgb(95, 91, 215);
             }
-            
+/* Boton para scroolear hacia arriba*/
+            .go-top-container{
+                position: fixed;
+                bottom: 64px;
+                right: 64px;
+                width: 112px;
+                height: 112px;
+                z-index: -1;
+                
+            }
 
+            .go-top-button{
+                width: 0px;
+                height: 0px;
+                background-color: aqua;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: .2s;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+            }
+            .go-top-button i{
+                position: absolute;
+                font-size: 32px;
+                top: 48%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0);
+                color: #FFFFFF;
+                transition: .2s;
+            }
+            .show{
+                z-index: 10;
+            }
+            .show .go-top-button{
+                animation: popup .3s ease-in-out;
+                width: 105px;
+                height: 105px;
+                z-index: 11;
+            }
+            .show i{
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            @keyframes poput{
+                0%{
+                    width: 0px;
+                    height: 0px;
+                }
+                50%{
+                    width: 128px;
+                    height: 128px;
+                }
+                100%{
+                    width: 105px;
+                    height: 105px;
+                }
+            }
 /*
 .titulos{
     color: rgb(214, 235, 76);
