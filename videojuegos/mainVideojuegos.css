@@ -184,9 +184,17 @@ body{
             
             table {
                 border-collapse:collapse;
+                text-align: center;
             }
+            .blanca{
+                background-color: #FFFFFF
+            }
+            /*
+            .gris{
+                background-color: gray;
+            }*/
             tr:nth-of-type(1) > th {
-                background-color: rgb(89, 85, 85);
+                background-color: rgb(217, 69, 69);
             }
             tr:nth-of-type(2) > th,
             tr:nth-of-type(3) > th,
@@ -197,7 +205,7 @@ body{
             tr:nth-of-type(8) > th,
             tr:nth-of-type(9) > th,
             tr:nth-of-type(10) > th {
-                background-color: rgb(89, 85, 85);
+                background-color: rgb(95, 91, 215);
             }
             
 
