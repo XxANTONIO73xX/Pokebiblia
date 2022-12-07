@@ -222,6 +222,7 @@ main .inicio {
 
     header nav .nav-bar ul.active {
         height: 300px;
+        display: block;
     }
 
     header nav .nav-bar ul {
@@ -234,6 +235,7 @@ main .inicio {
         left: 0;
         top: 50px;
         transition: 0.1s;
+        display: none;
     }
 
     header nav .nav-bar ul.active li {
