@@ -489,6 +489,11 @@ document.body.innerHTML = `
 </div>
 <header>
     <nav>
+        <div class="hamburger-button">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
         <div class="nav-bar">
             <img src="/images/pokeLogo2.png" alt="">
             <ul>
@@ -506,3 +511,9 @@ window.addEventListener('load', function(){
     musicaRomantica = document.getElementById("musicaRomantica");
     musicaRomantica.volume = 0.2;
 })
+
+hamburguesa = document.querySelector(".hamburger-button");
+hamburguesa.onclick = function() {
+    navBar = document.querySelector(".nav-bar ul");
+    navBar.classList.toggle("active");
+}

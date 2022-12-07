@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemón</title>
     <link rel="stylesheet" href="../estilos.css">
+    <script src="../jquery/jquery-3.6.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
 </head>
 <body>
@@ -497,6 +498,11 @@
     </div>
     <header>
         <nav>
+            <div class="hamburger-button">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
             <div class="nav-bar">
                 <img src="images/pokeLogo2.png" alt="">
                 <ul>
@@ -520,6 +526,13 @@
             musicaRomantica = document.getElementById("musicaRomantica");
             musicaRomantica.volume = 0.2;
         })
+    </script>
+    <script>
+        hamburguesa = document.querySelector(".hamburger-button");
+        hamburguesa.onclick = function() {
+            navBar = document.querySelector(".nav-bar ul");
+            navBar.classList.toggle("active");
+        }
     </script>
 </body>
 </html>
