@@ -11,7 +11,8 @@
 body {
     user-select: none;
     overflow: hidden;
-    background-color: rgb(116, 154, 0);
+    background: rgb(143,226,228);
+    background: linear-gradient(357deg, rgba(143,226,228,0.5648537002691701) 10%, rgba(58,151,214,0.6068705069918592) 30%, rgba(36,0,255,0.6684951568518032) 70%);
     cursor: url("./images/cursor64.cur"), auto;
 }
 
@@ -28,7 +29,8 @@ header nav .nav-bar {
     height: 50px;
     box-shadow: 5px 4px 2px 0px rgba(0, 0, 0, 0.43);
     z-index: 90;
-    background-color: rgb(154, 154, 255);
+    background: rgb(255,255,255);
+    background: linear-gradient(127deg, rgba(255,255,255,1) 10%, rgba(181,185,255,1) 30%, rgba(214,58,111,1) 57%, rgba(255,0,0,1) 90%);
 }
 
     header nav .nav-bar img {
@@ -47,7 +49,8 @@ header nav .nav-bar {
         text-align: center;
         width: 70%;
         height: 50px;
-        background-color: rgb(154, 154, 255);
+        background: rgb(255,255,255);
+        background: linear-gradient(127deg, rgba(255,255,255,1) 10%, rgba(181,185,255,1) 30%, rgba(214,58,111,1) 57%, rgba(255,0,0,1) 90%);
     }
 
         header nav .nav-bar ul li {
@@ -64,7 +67,7 @@ header nav .nav-bar {
                 height: 50px;
                 transition: .2s;
                 font-size: 30px;
-                color: white;
+                color: rgb(0, 0, 0);
             }
 
                 header nav .nav-bar ul li a:hover {
