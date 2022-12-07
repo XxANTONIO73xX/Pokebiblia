@@ -5,7 +5,7 @@ main .gameboy {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: -650px;
+    top: -700px;
     left: 60px;
     right: 0;
     z-index: 10;
@@ -16,7 +16,7 @@ main iframe{
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: -500px;
+    top: -550px;
     left: 60px;
     right: 0;
     z-index: 10;

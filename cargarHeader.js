@@ -490,9 +490,7 @@ document.body.innerHTML = `
 <header>
     <nav>
         <div class="nav-bar">
-            <div class="logo_page">
-                <img src="/images/pokeLogo.png">
-            </div>
+            <img src="/images/pokeLogo2.png" alt="">
             <ul>
                 <li><a href="/anime/anime.html">Anime</a></li>
                 <li><a href="/videojuegos/videojuegos.html">Videojuegos</a></li>
