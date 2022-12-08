@@ -51,9 +51,14 @@ h2{
 
 p{
     font-size: 25px;
-    padding: 20px;
+    padding: 10px;
     color: black;
     text-align: justify;
+}
+
+.info p {
+    width: 110%;
+    font-size: 20px;
 }
 
 i{
@@ -72,10 +77,15 @@ i{
     float: left;
 }
 
+.tipos_pokemon .que_son .info p {
+    width: 100%;
+}
+
 .tipos_pokemon .que_son img{
     width: 35%;
     float: right;
-    margin-right: 120px;
+    margin-top: 20px;
+    margin-right: 80px;
 }
 
 .personajes .texto_personajes{
@@ -97,7 +107,12 @@ i{
 }
 
 .anime-section article img{
-    margin-left: 13px;
+    margin-left: 5px;
+    width: 100%;
+}
+
+.article-t16 img {
+    width: 300px;
 }
 
 
@@ -261,6 +276,56 @@ h4{
     }
 }
 
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 800PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 800px) {
+    .info p {
+        width: 125%;
+        font-size: 20px;
+    }
+
+    .temporada .article-t18 {
+        height: 500px;
+        transition: 0.25s;
+    }
+
+    .temporada .article-t16 {
+        height: 600px;
+    }
+
+    .temporada .article-t16 .info {
+        width: 80%;
+    }
+
+    .temporada .article-t16 .info p {
+        width: 100%;
+        position: relative;
+        top: 30px;
+    }
+
+    .temporada .article-t16  img {
+        width: 300px;
+        position: relative;
+        left: 90px;
+    }
+
+    .temporada .article-t13 {
+        height: 600px;
+    }
+
+    .temporada .article-t11,
+    .temporada .article-t9,
+    .temporada .article-t8,
+    .temporada .article-t7,
+    .temporada .article-t5 {
+        height: 530px;
+    }
+
+    .temporada .article-t3 {
+        height: 530px;
+    }
+}
+
 /*---------------------------------------------------- MEDIDAS MAX-WIDTH = 750PX ----------------------------------------------------*/
 
 @media only screen and (max-width: 750px) {
@@ -307,6 +372,12 @@ h4{
     .contenido .series section .portada {
         left: 135px;
     }
+
+    .info p {
+        width: 100%;
+        font-size: 20px;
+    }
+    
 }
 
 /*---------------------------------------------------- MEDIDAS MAX-WIDTH = 630PX ----------------------------------------------------*/
@@ -325,6 +396,29 @@ h4{
 
     .contenido .series section .portada {
         left: 85px;
+    }
+
+    .temporada .article-t23 {
+        height: 1000px;
+    }
+
+    .temporada .article-t22,
+    .temporada .article-t18,
+    .temporada .article-t15,
+    .temporada .article-t13,
+    .temporada .article-t12,
+    .temporada .article-t11,
+    .temporada .article-t9,
+    .temporada .article-t8,
+    .temporada .article-t7,
+    .temporada .article-t6,
+    .temporada .article-t5,
+    .temporada .article-t4 {
+        height: 850px;
+    }
+
+    .temporada .article-t3 {
+        height: 850px;
     }
 }
 
@@ -392,6 +486,37 @@ h4{
         left: 15px;
     }
 
+    .temporada .article-t23 {
+        height: 1300px;
+    }
+
+    .temporada .article-t16 {
+        height: 1000px;
+    }
+
+    .temporada .article-t22,
+    .temporada .article-t18,
+    .temporada .article-t15,
+    .temporada .article-t13,
+    .temporada .article-t12,
+    .temporada .article-t11,
+    .temporada .article-t9,
+    .temporada .article-t8,
+    .temporada .article-t7,
+    .temporada .article-t6,
+    .temporada .article-t5,
+    .temporada .article-t4 {
+        height: 1050px;
+    }
+
+    .temporada .article-t3 {
+        height: 1050px;
+    }
+
+    .temporada .article-t16 img {
+        left: 0;
+        width: 90%;
+    }
 }
 
 /*---------------------------------------------------- MEDIDAS MAX-WIDTH = 400PX ----------------------------------------------------*/
@@ -435,5 +560,84 @@ h4{
         left: -8px;
     }
 
+    .temporada .article-t23 {
+        height: 1400px;
+    }
+
+    .temporada .article-t16 {
+        height: 800px;
+    }
+
+    .temporada .article-t22,
+    .temporada .article-t20,
+    .temporada .article-t18,
+    .temporada .article-t15,
+    .temporada .article-t13,
+    .temporada .article-t12,
+    .temporada .article-t11,
+    .temporada .article-t9,
+    .temporada .article-t8,
+    .temporada .article-t7,
+    .temporada .article-t6,
+    .temporada .article-t5,
+    .temporada .article-t4 {
+        height: 1200px;
+    }
+
+    .temporada section img {
+        transform: scale(0.8);
+    }
+
+    .temporada .article-t3 {
+        height: 1150px;
+    }
+
+    .temporada .article-t16 img {
+        left: 0;
+        width: 90%;
+    }
+
 }
 
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 350PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 350px) {
+    .temporada {
+        position: relative;
+        width: 100%;
+        left: -20px;
+    }
+    .temporada .article-t23 {
+        height: 1400px;
+    }
+
+    .temporada .article-t16 {
+        height: 800px;
+    }
+
+    .temporada .article-t22,
+    .temporada .article-t20,
+    .temporada .article-t18,
+    .temporada .article-t15,
+    .temporada .article-t13,
+    .temporada .article-t12,
+    .temporada .article-t11,
+    .temporada .article-t9,
+    .temporada .article-t8,
+    .temporada .article-t7,
+    .temporada .article-t6,
+    .temporada .article-t5,
+    .temporada .article-t4 {
+        height: 1200px;
+    }
+
+    .contenido .series section .portada {
+        transform: scale(0.6);
+        left: -30px;
+    }
+
+    .temporada .article-t3 {
+        height: 1150px;
+    }
+}
