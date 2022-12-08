@@ -3,7 +3,6 @@
 }
 
 body {
-    background-color: rgb(7, 7, 100);
     cursor: url("../images/cursorPoke.cur")
 }
 
@@ -11,18 +10,25 @@ body {
 /*-------------------------------------------------------- BODY -----------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------------*/
 
+.wrapper-body {
+    height: 1600px;
+}
+
 .wrapper-body .contenido {
-    position: relative;
+    position: absolute;
     width: 1000px;
-    height: 650px;
-    margin: 0 auto;
+    height: 1800px;
     background-color: rgb(173, 187, 255);
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
-    top: -630px;
-    overflow: scroll;
+    top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-bottom: 40px;
 }
 
 .wrapper-body .contenido .history {
@@ -133,9 +139,10 @@ body {
 
 .wrapper-body .contenido .inspiracion .info {
     position: relative;
-    left: 20px;
+    top: 20px;
+    left: 0;
     height: 340px;
-    width: 70%;
+    width: 65%;
 
 }
 
@@ -152,7 +159,7 @@ body {
 
 .wrapper-body .contenido .inspiracion .info p {
     position: relative;
-    width: 70%;
+    width: 80%;
     top: 50px;
     height: 200px;
     text-align: justify;

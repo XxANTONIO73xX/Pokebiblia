@@ -2,7 +2,9 @@ document.body.innerHTML = `
 <link rel="stylesheet" href="../estilos.css">
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
 <audio id="musicaRomantica" src="/audio/Pokeintro.mp3" autoplay="autoplay" loop="loop"></audio>
-
+<div class="background">
+        
+</div>
 <header>
     <nav>
         <div class="hamburger-button">
