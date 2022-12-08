@@ -31,10 +31,10 @@ main iframe{
 
 @media (max-width: 1440px){
     main .gameboy{
-        top: -670px;
+        top: -40px;
     }
     main iframe{
-        top: -500px;
+        top: 90px;
     }
 }
 
@@ -47,7 +47,7 @@ main iframe{
     }
 
     main iframe{
-        top: -540px;
+        top: 90px;
         width: 90%;
         height: 500px;
         margin-right: 30px;
