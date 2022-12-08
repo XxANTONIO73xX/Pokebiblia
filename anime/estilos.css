@@ -27,9 +27,7 @@ main::-webkit-scrollbar{
 .Anime_television{
     color: purple;
 }
-.series{
-    color: purple;
-}
+
 .personajes{
     width: 100%;
     position: relative;
@@ -45,6 +43,16 @@ main::-webkit-scrollbar{
 }
 .personajes .imagen_personajes img{
     width: 100%;
+}
+
+.portada_info .portada, .portada_info .info_serie{
+    display: inline-block;
+    width: 400px;
+}
+
+.temporada1{
+    padding: 20px;
+    background-color: red;
 }
 
 /* aqui comienza el slider*/
