@@ -160,9 +160,14 @@ main .contenedor {
 
 /* Estilos de la pokedex*/
 
+main{
+    position: relative;
+    top: 50px;
+}
+
 main .contenedor-pokedex{
     position: relative;
-    top: -150px;
+    top: -100px;
     right: -1000px;
     width: 650px;
     height: 600px;
