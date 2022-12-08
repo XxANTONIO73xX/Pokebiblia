@@ -34,8 +34,15 @@ $(document).on('mouseenter', "#listado", function(){
 })
 
 function getPokemon(name){
-    $(".contenedor").animate({right: '670px'}, 'slow');
-    $(".contenedor-pokedex").animate({right: '10px'}, 'slow');
+    const pageWidth  = document.documentElement.scrollWidth;
+    if(pageWidth <=769){
+        pokedex = $(".pokedex img")[0]
+        pokedex.src = "../images/pokedexmobile.jpg"
+        $(".contenedor-pokedex").css("display", "block")
+    }else{
+        $(".contenedor").animate({right: '670px'}, 'slow');
+        $(".contenedor-pokedex").animate({right: '10px'}, 'slow');
+    }
     $.ajax({
         type: "GET",
         url: "https://pokeapi.co/api/v2/pokemon/"+ name,
@@ -93,9 +100,14 @@ function getPokemon(name){
     })
 }
 
-$(".close").click(function (e) { 
-    $(".contenedor").animate({right: '0'}, 'slow');
-    $(".contenedor-pokedex").animate({right: '-1000px'}, 'slow');
+$(".close").click(function (e) {
+    const pageWidth  = document.documentElement.scrollWidth;
+    if(pageWidth <=769){
+        $(".contenedor-pokedex").css("display", "none")
+    }else{
+        $(".contenedor").animate({right: '0'}, 'slow');
+        $(".contenedor-pokedex").animate({right: '-1000px'}, 'slow');
+    } 
 });
 
 $("#buscar").click(function(){

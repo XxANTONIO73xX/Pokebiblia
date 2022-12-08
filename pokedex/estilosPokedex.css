@@ -285,3 +285,138 @@ main .pokedex-descripcion article p{
     font-size: 30px;
     text-align: justify;
 }
+
+/*Responsive part*/
+
+@media (min-width: 320px) and (max-width: 769px){
+    .contenedor-pokedex{
+        display: none;
+    }
+    main .contenedor{
+        width: 100%;
+        padding: 10px;
+        height: auto;
+    }
+
+    main .contenedor .pokedex-descripcion article p{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    main .contenedor .search_bar .search{
+        font-size: 20px;
+        height: 30px;
+    }
+    
+    main .contenedor .search_bar .search_button{
+        height: 30px;
+    }
+
+    main .contenedor .search_bar .search_button img {
+        height: 40%;
+    }
+
+    main .contenedor .pokemon_list-box{
+        top: 50px;
+    }
+
+    main .contenedor .pokemon_list-box .pokemon_listed .info .name{
+        text-align: right;
+    }
+
+    main .contenedor .pokemon_list-box .pokemon_listed .info{
+        text-align: right;
+        right: 10px;
+    }
+    main .contenedor-pokedex {
+        width: 100%;
+        right: 0;
+        height: auto;
+    }
+
+    main .estadisticas, main #estadisticas{
+        display: none;
+    }
+
+    main .contenedor-pokedex .pokedex .informacion-pokemon{
+        top: 70%;
+        left: 8%;
+        font-size: 6vw;
+    }
+
+    .nombre_pokemon{
+        font-size: 12vw;
+        left: 45%;
+        top: 22%;
+    }
+
+    .descripcion_pokemon{
+        font-size: 6vw;
+        top: 50%;
+        width: 83%;
+        left: 10%;
+    }
+
+    .categoria_pokemon{
+        top: 46%;
+        width: 90%;
+        font-size: 6vw;
+        left: 10%;
+    }
+
+    .peso_altura{
+        top: 31%;
+        left: 52%;
+        font-size: 9vw;
+    }
+
+    .pokedex{
+        position: relative;
+    }
+
+    main .contenedor-pokedex .pokedex .sprite{
+        position: absolute;
+        width: 30%;
+        height: auto;
+        right: 60%;
+        top: 20%;
+    }
+
+    main .contenedor-pokedex .pokedex .close{
+        right: 10px;
+    }
+}/*
+@media (min-width: 425px) and (max-width: 800px){
+    main .contenedor-pokedex .pokedex .sprite{
+        top: 20%;
+    }
+}
+
+@media (min-width: 376px) {
+    main .contenedor-pokedex .pokedex .sprite{
+        right: 220px;
+        width: 34%;
+        height: auto;
+    }
+
+    .nombre_pokemon{
+        left: 160px;
+        font-size: 45px;
+    }
+
+    .peso_altura{
+        left: 200px;
+        font-size: 35px;
+    }
+
+    .categoria_pokemon, .descripcion_pokemon{
+        left: 50px;
+        font-size: 25px;
+        width: 77%;
+    }
+    main .contenedor-pokedex .pokedex .informacion-pokemon{
+        top: 420px;
+        left: 45px;
+    }
+
+}*/
