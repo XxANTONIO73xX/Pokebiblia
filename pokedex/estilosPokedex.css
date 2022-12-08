@@ -6,7 +6,7 @@ main .contenedor {
     position: absolute;
     margin-left:auto;
     margin-right:auto;
-    top: 240px;
+    top: 90px;
     left:0;
     right:0;
     width: 800px;
@@ -16,7 +16,7 @@ main .contenedor {
 
     main .contenedor .search_bar {
         position: relative;
-        top: 90px;
+        top: 45px;
         width: 100%;
         height: 40px;
     }
@@ -59,7 +59,7 @@ main .contenedor {
     main .contenedor .pokemon_list-box {
         background-color: blue;
         position: relative;
-        top: 110px;
+        top: 70px;
         width: 100%;
         height: 300px;
         border-radius: 10px;
@@ -162,12 +162,11 @@ main .contenedor {
 
 main{
     position: relative;
-    top: 50px;
 }
 
 main .contenedor-pokedex{
     position: relative;
-    top: -100px;
+    top: 160px;
     right: -1000px;
     width: 650px;
     height: 600px;
@@ -266,13 +265,7 @@ main .contenedor-pokedex .pokedex .informacion-pokemon ul li{
 /*estilos del texto de relleno*/
 
 main .pokedex-descripcion{
-    position: relative;
-    top: 50px;
-    left: 340px;
-    margin-left: 25px;
     color: white;
-    padding: 20px;
-    width: 800px;
 }
 
 main .pokedex-descripcion h1{

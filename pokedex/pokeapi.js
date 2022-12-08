@@ -36,7 +36,6 @@ $(document).on('mouseenter', "#listado", function(){
 function getPokemon(name){
     $(".contenedor").animate({right: '670px'}, 'slow');
     $(".contenedor-pokedex").animate({right: '10px'}, 'slow');
-    $(".pokedex-descripcion").animate({left: '0'}, 'slow');
     $.ajax({
         type: "GET",
         url: "https://pokeapi.co/api/v2/pokemon/"+ name,
@@ -96,7 +95,6 @@ function getPokemon(name){
 
 $(".close").click(function (e) { 
     $(".contenedor").animate({right: '0'}, 'slow');
-    $(".pokedex-descripcion").animate({left: '340px'}, 'slow');
     $(".contenedor-pokedex").animate({right: '-1000px'}, 'slow');
 });
 
