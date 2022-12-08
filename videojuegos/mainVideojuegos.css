@@ -28,14 +28,16 @@ body{
     background-color: rgb(173, 187, 255);
 }
 
-    .contenedor main .inicio_pokemon,
+    .contenedor main .inicio_pokemon {
+        position: relative;
+        height: auto;
+        top: 20px;
+    }
+
     .contenedor main .principales {
         position: relative;
         height: auto;
         top: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
     }
 
     .contenedor main h1 {
