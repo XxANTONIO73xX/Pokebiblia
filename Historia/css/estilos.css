@@ -117,7 +117,6 @@ body {
 
 .wrapper-body .contenido .pokemon .img-torterra {
     position: relative;
-    left: 10px;
     width: 30%;
     height: 350px;
     text-align: center;
@@ -143,7 +142,7 @@ body {
     left: 0;
     height: 340px;
     width: 65%;
-
+    float: left;
 }
 
 .wrapper-body .contenido .inspiracion .info h2 {
@@ -168,18 +167,18 @@ body {
 
 .wrapper-body .contenido .inspiracion .img-tajiri {
     position: relative;
-    left: 660px;  
-    width: 30%;
-    height: 270px;
+    float: left; 
+    width: 35%;
+    height: 100%;
     margin: 0;
-    top: -300px;
-    
+    top: 0px;
 }
 
 .wrapper-body .contenido .inspiracion .img-tajiri img {
     position: relative;
-    width: 300px;
-    height: 250px;
+    top: 55px;
+    left: 0;
+    width: 90%;
     transition: 1s;
 }
 
@@ -262,4 +261,362 @@ body {
     to {
         rotate: 10deg;
     }
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------- RESPONSIVE --------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 1400PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 1400px) {
+    .wrapper-body .contenido {
+        position: absolute;
+        width: 80%;
+        height: 1800px;
+        background-color: rgb(173, 187, 255);
+        box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
+        -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        margin-bottom: 40px;
+        transition: 1s;
+    }
+}
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 1000PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 1000px) {
+    .wrapper-body .contenido .inspiracion .img-tajiri img {
+        top: 85px;
+    }
+
+    .wrapper-body .contenido .pokemon .img-torterra img {
+        width: 340px;
+    }
+}
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 850PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 850px) {
+    .wrapper-body .contenido .datos ul {
+        width: 90%;
+    }
+
+    .wrapper-body .contenido .datos {
+        top: 40px;
+        transition: 1s;
+    }
+
+    .wrapper-body .contenido .pokemon .img-torterra {
+        position: absolute;
+        width: 290px;
+    }
+
+    .wrapper-body .contenido .pokemon .img-torterra img {
+        width: 100%;
+    }
+
+    .wrapper-body .contenido .history .pokemon-logo {
+        position: relative;
+        top: 20px;
+        margin: 0 auto;
+        width: 100%;
+        height: 40%;
+    }
+    
+    .wrapper-body .contenido .history .pokemon-logo img {
+        top: 30px;
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
+    .wrapper-body .contenido .inspiracion .img-tajiri img {
+        top: 95px;
+    }
+}
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 800PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 800px) {
+    .wrapper-body .contenido .inspiracion {
+        top: 80px;
+    }
+
+    .wrapper-body .contenido .inspiracion .img-tajiri {
+        position: relative;
+        top: 20px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .wrapper-body .contenido .inspiracion .img-tajiri img {
+        position: absolute;
+        top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        width: 40%;
+    }
+
+    .wrapper-body .contenido .inspiracion .info{
+        width: 100%;
+        height: 290px;
+        border-top: 2px solid rgba(0, 0, 255, 0.151);
+    }
+
+    .wrapper-body .contenido .inspiracion .info h2 {
+        width: 100%;
+    }
+
+    .wrapper-body .contenido .pokemon {
+        position: relative;
+        top: 240px;
+        height:570px;
+        transition: 0.5s;
+        border-top: 2px solid rgba(0, 0, 255, 0.151);
+    }
+
+    .wrapper-body .contenido .pokemon .img-torterra {
+        position: absolute;
+        float: left;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        transform: scale(0.8);
+        transition: 0.5s;
+    }
+
+    .wrapper-body .contenido .pokemon .info {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        transition: 0.5s;
+        height: 300px;
+        top: 0;
+    }
+
+    .wrapper-body .contenido .pokemon .info p {
+        width: 90%;
+    }
+
+    .wrapper-body .contenido .inspiracion .img-tajiri img {
+        left: 0;
+    }
+
+    .wrapper-body .contenido .datos {
+        top: 220px;
+        transition: 1s;
+        border-top: 2px solid rgba(0, 0, 255, 0.151);
+    }
+
+    .wrapper-body .contenido {
+        height: 2300px;
+    }
+    
+    .wrapper-body .contenido .datos .pikapika img {
+        transform: scale(0.94);
+        top: 90px;
+    }
+
+    .wrapper-body {
+        height: 2400px;
+    }
+}
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 600PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+    .wrapper-body .contenido {
+        width: 90%;
+    }
+    .wrapper-body .contenido .inspiracion .img-tajiri img {
+        top: 20px;
+    }
+
+    .wrapper-body .contenido .history .pokemon-logo img {
+        transform: scale(0.9);
+        top: 10px;
+    }
+}
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 480PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 480px) {
+    .wrapper-body .contenido .history .historia h1 {
+        top: 0;
+        transition: 0.2s;
+        font-size: 30px;
+    } 
+
+    .wrapper-body .contenido .history .historia p {
+        position: absolute;
+        width: 80%;
+        top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .wrapper-body .contenido .history .historia .pokemon-logo {
+        top: 300px;
+        height: 130px;
+    }
+
+    .wrapper-body .contenido .history .historia .pokemon-logo img {
+        position: absolute;
+        top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .wrapper-body .contenido .inspiracion {
+        top: 50px;
+        height: 600px;
+    }
+
+    .wrapper-body .contenido .inspiracion .info {
+        height: 380px;
+    }
+
+    .wrapper-body .contenido .inspiracion .img-tajiri img {
+        top: 40px;
+        transform: scale(1.5);
+    }
+
+    .wrapper-body .contenido .history .pokemon-logo img {
+        transform: scale(0.6);
+        top: 10px;
+    }
+
+    .wrapper-body .contenido .pokemon {
+        top: 80px;
+        height: 620px;
+    }
+
+    .wrapper-body .contenido .pokemon .info {
+        height: 380px;
+    }
+
+    .wrapper-body .contenido .pokemon .info p {
+        width: 80%;
+    }
+
+    .wrapper-body .contenido .pokemon .img-torterra {
+        top: 320px;
+        width: 100%;
+    }
+
+    .wrapper-body .contenido .datos {
+        top: 90px;
+        height: 650px;
+    }
+
+    .wrapper-body .contenido .datos .info .pikapika img {
+        top: 20px;
+        transform: scale(0.6);
+    }
+
+    .wrapper-body .contenido .datos ul {
+        width: 100%;
+        height: 300px;
+    }
+
+    .wrapper-body .contenido .datos ul li {
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .wrapper-body .contenido {
+        height: 2450px;
+    }
+
+    .wrapper-body {
+        height: 2500px;
+    }
+}
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 400PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 400px) {
+    .wrapper-body .contenido .history .historia {
+        height: 600px;
+    }
+
+    .wrapper-body .contenido .history .historia .pokemon-logo {
+        position: relative;
+        top: 360px;
+    }
+
+    .wrapper-body .contenido .history .inspiracion {
+        top: 0;
+        height: 650px;
+    }
+
+    .wrapper-body .contenido .history .inspiracion .img-tajiri {
+        top: 70px;
+    }
+
+    .wrapper-body .contenido .history .pokemon {
+        top: 0;
+        height: 700px;  
+    }
+
+    .wrapper-body .contenido .history .pokemon h2 {
+        width: 100%;
+    }
+
+    .wrapper-body .contenido .history .pokemon .img-torterra {
+        position: absolute;
+        top: 370px;
+    }
+
+    .wrapper-body .contenido .history .datos {
+        top: 0;
+        height: 700px;
+    }   
+
+    .wrapper-body .contenido .history .datos .pikapika {
+        top: 60px;
+    }   
+
+    .wrapper-body .contenido {
+        height: 2650px;
+    }
+
+    @keyframes ladoAlado {
+        from {
+            right: -60px;
+            rotate: 10deg;
+        }
+    
+        50% {
+            right: 60px;
+            rotate: -20deg;
+        }
+    
+        100% {
+            right: -60px;
+            rotate: -15deg;
+        }
+    
+        to {
+            rotate: 10deg;
+        }
+    }
+
 }

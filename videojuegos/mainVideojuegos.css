@@ -37,7 +37,12 @@ body{
     .contenedor main .principales {
         position: relative;
         height: auto;
-        top: 20px;
+        top: 1750px;
+    }
+
+    .contenedor main .generaciones {
+        position: absolute;
+        top:3600px;
     }
 
     .contenedor main h1 {
