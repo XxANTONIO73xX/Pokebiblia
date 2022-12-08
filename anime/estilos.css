@@ -1,59 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(32, 31, 31) -6px 8px;
+    letter-spacing: 3px;
+}
+
 main{
     position: relative;
-    z-index: 10;
-    overflow-x: scroll;
+    top: 90px;
 }
+
+.temporada section{
+    margin-top: 40px;
+    float: none;
+    clear: both;
+    border: 2px solid;
+}
+
+article{
+    margin: 15px;
+}
+
 .contenido{
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    margin-right: auto;
-    margin-left: auto;
-    width: 980px;
-    height: 680px;
-    background-color: gainsboro;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    background-color: rgb(173, 187, 255);
+    box-shadow: -1px -2px 30px 6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px -2px 30px 6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -2px 30px 6px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    padding: 25px;
 }
 
-main::-webkit-scrollbar{
-    overflow-x: scroll;
-}
-.tipos_pokemon{
-    color :purple;
-}
-.El_anime{
-    color: purple;
-}
-.Anime_television{
-    color: purple;
+h2{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(32, 31, 31) -3px 4px;
+    letter-spacing: 3px;
 }
 
-.personajes{
+p{
+    font-size: 25px;
+    padding: 20px;
+    color: black;
+    text-align: justify;
+}
+
+i{
+    color: black;
+    text-shadow: none;
+    text-decoration: underline;
+}
+
+.tipos_pokemon .que_son{
     width: 100%;
-    position: relative;
-    background-color: red;
+    height: 380px;
 }
-.personajes .texto_personajes{
+
+.tipos_pokemon .que_son .info{
     width: 50%;
     float: left;
 }
-.personajes .imagen_personajes{
+
+.tipos_pokemon .que_son img{
+    width: 35%;
+    float: right;
+    margin-right: 120px;
+}
+
+.personajes .texto_personajes{
+    height: 460px;
+}
+
+.personajes .texto_personajes .info{
+    float: right;
     width: 50%;
-    float:left;
-}
-.personajes .imagen_personajes img{
-    width: 100%;
 }
 
-.portada_info .portada, .portada_info .info_serie{
-    display: inline-block;
-    width: 400px;
+.personajes .texto_personajes .info h2{
+    text-align: right;
 }
 
-.temporada1{
-    padding: 20px;
-    background-color: red;
+.personajes .texto_personajes img{
+    width: 50%;
+    margin-top: 25px;
 }
+
+.anime-section article img{
+    margin-left: 13px;
+}
+
 
 /* aqui comienza el slider*/
 
@@ -93,3 +139,86 @@ main::-webkit-scrollbar{
 }
 
 
+/* temporadas */
+
+.temporada{
+    margin: 20px;
+    box-shadow: 0px 1px 14px 9px rgba(0,0,0,0.27) inset;
+    -webkit-box-shadow: 0px 1px 14px 9px rgba(0,0,0,0.27) inset;
+    -moz-box-shadow: 0px 1px 14px 9px rgba(0,0,0,0.27) inset;
+}
+
+.temporada section article h3{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(32, 31, 31) -3px 4px;
+    letter-spacing: 3px;
+    margin: 40px 0px;
+}
+
+.temporada section article .portada{
+    width: 30%;
+    height: 361PX;
+}
+
+
+.temporada section article .info{
+    width: 55%;
+    float: right;
+    margin-right: 70px;
+}
+
+h4{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(32, 31, 31) -3px 4px;
+    letter-spacing: 3px;
+}
+
+.temporada section article .info .descriptions{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(32, 31, 31) -3px 4px;
+    letter-spacing: 3px;
+    padding: 0px;
+    margin: 20px 0px;
+}
+
+.temporada section article .peliculas ol{
+    padding: 20px;
+}
+
+.temporada section article .peliculas ol li{
+    display: inline-block;
+    margin: 10px;
+    width: 270px;
+}
+
+.temporada section article .peliculas ol li p{
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+
+.temporada section article .peliculas ol li img{
+    width: 110px;
+    margin-left: 70px;
+}
+
+
+.article-t6{
+    height: 500px;
+}
+
+.article-t16{
+    height: 400px;
+}
+
+.portada-t16{
+    width: 350px;
+}
+
+.article-t23{
+    height: 650px;
+}
