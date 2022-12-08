@@ -97,8 +97,6 @@ function getPokemon(name){
 $(".close").click(function (e) { 
     $(".contenedor").animate({right: '0'}, 'slow');
     $(".pokedex-descripcion").animate({left: '340px'}, 'slow');
-    $(".pokedex-descripcion h1").animate({'text-align': 'center'}, 'slow');
-    $(".pokedex-descripcion article h2").animate({'text-align': 'center'}, 'slow');
     $(".contenedor-pokedex").animate({right: '-1000px'}, 'slow');
 });
 
