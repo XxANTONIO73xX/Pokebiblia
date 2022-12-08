@@ -3,8 +3,10 @@
 }
 
 body {
+    background-color: rgb(7, 7, 100);
     cursor: url("../images/cursorPoke.cur")
 }
+
 /*---------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------- BODY -----------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------------*/
@@ -13,65 +15,65 @@ body {
     position: relative;
     width: 1000px;
     height: 650px;
-    margin:  0 auto;
+    margin: 0 auto;
     background-color: rgb(173, 187, 255);
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
-    top: -1050px;
+    top: -630px;
     overflow: scroll;
 }
 
-    .wrapper-body .contenido .history {
-        position: relative;
-        width: 100%;
-        height: 550px;
-        margin: 0 auto;
-        top: auto;
-    }
+.wrapper-body .contenido .history {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    margin: 0 auto;
+    top: auto;
+}
 
-    .wrapper-body .contenido .history .historia {
-        position: relative;
-        top: 10px;
-        width: 100%;
-        height: 500px;
-    }
+.wrapper-body .contenido .history .historia {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    height: 500px;
+}
 
-        .wrapper-body .contenido .history h1 {
-            position: relative;
-            text-align: center;
-            height: 100px;
-            top: 40px;
-            color: #2774ba;
-            font-size: 50px;
-        }
+.wrapper-body .contenido .history h1 {
+    position: relative;
+    text-align: center;
+    height: 100px;
+    top: 40px;
+    color: #2774ba;
+    font-size: 50px;
+}
 
-        .wrapper-body .contenido .history p {
-            position: relative;
-            top: 30px;
-            margin: 0 auto;
-            width: 90%;
-            text-align: justify;
-            letter-spacing: 1px;
-        }
+.wrapper-body .contenido .history p {
+    position: relative;
+    top: 30px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: justify;
+    letter-spacing: 1px;
+}
 
-        .wrapper-body .contenido .history .pokemon-logo {
-            position: relative;
-            top: 60px;
-            margin: 0 auto;
-            width: 100%;
-            height: 170px;
-        }
+.wrapper-body .contenido .history .pokemon-logo {
+    position: relative;
+    top: 60px;
+    margin: 0 auto;
+    width: 100%;
+    height: 170px;
+}
 
-            .wrapper-body .contenido .history .pokemon-logo img {
-                position: relative;
-                width: 350px;
-                height: 130px;
-                margin: 0 auto;
-                display: block;
-                transform: scale(1.3);
-            }
+.wrapper-body .contenido .history .pokemon-logo img {
+    position: relative;
+    width: 350px;
+    height: 130px;
+    margin: 0 auto;
+    display: block;
+    transform: scale(1.3);
+}
 
 .wrapper-body .contenido .pokemon {
     position: relative;
@@ -79,33 +81,33 @@ body {
     height: 350px;
 }
 
-    .wrapper-body .contenido .pokemon .info {
-        position: relative;
-        left: 30px;
-        height: 340px;
-        width: 70%;
-        float: right;
-    }
+.wrapper-body .contenido .pokemon .info {
+    position: relative;
+    left: 30px;
+    height: 340px;
+    width: 70%;
+    float: right;
+}
 
-        .wrapper-body .contenido .pokemon .info h2 {
-            position: relative;
-            margin: 0 auto;
-            top: 30px;
-            width: 400px;
-            height: 40px;
-            text-align: center;
-            color: #0a4b88;
-            font-size: 30px;
-        }
+.wrapper-body .contenido .pokemon .info h2 {
+    position: relative;
+    margin: 0 auto;
+    top: 30px;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    color: #0a4b88;
+    font-size: 30px;
+}
 
-        .wrapper-body .contenido .pokemon .info p {
-            position: relative;
-            width: 70%;
-            top: 50px;
-            height: 200px;
-            text-align: justify;
-            letter-spacing: 1px;
-        }
+.wrapper-body .contenido .pokemon .info p {
+    position: relative;
+    width: 70%;
+    top: 50px;
+    height: 200px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
 
 .wrapper-body .contenido .pokemon .img-torterra {
     position: relative;
@@ -115,59 +117,110 @@ body {
     text-align: center;
 }
 
-    .wrapper-body .contenido .pokemon .img-torterra img {
-        position: relative;
-        width: 400px;
-        height: 340px;
-        animation: tambaleado 4s infinite;
-        transition: 1s;
-    }
+.wrapper-body .contenido .pokemon .img-torterra img {
+    position: relative;
+    width: 400px;
+    height: 340px;
+    animation: tambaleado 4s infinite;
+    transition: 1s;
+}
 
-.wrapper-body .contenido .datos{
+.wrapper-body .contenido .inspiracion {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.wrapper-body .contenido .inspiracion .info {
+    position: relative;
+    left: 20px;
+    height: 340px;
+    width: 70%;
+
+}
+
+.wrapper-body .contenido .inspiracion .info h2 {
+    position: relative;
+    margin: 0 auto;
+    top: 30px;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    color: #0a4b88;
+    font-size: 30px;
+}
+
+.wrapper-body .contenido .inspiracion .info p {
+    position: relative;
+    width: 70%;
+    top: 50px;
+    height: 200px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.wrapper-body .contenido .inspiracion .img-tajiri {
+    position: relative;
+    left: 660px;  
+    width: 30%;
+    height: 270px;
+    margin: 0;
+    top: -300px;
+    
+}
+
+.wrapper-body .contenido .inspiracion .img-tajiri img {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    transition: 1s;
+}
+
+.wrapper-body .contenido .datos {
     position: relative;
     width: 100%;
     height: 300px;
     margin: 0 auto;
 }
 
-    .wrapper-body .contenido .datos h2{
-        position: relative;
-        text-align: center;
-        height: 80px;
-        top: 10px;
-        color: #2774ba;
-        font-size: 40px;
-    }
+.wrapper-body .contenido .datos h2 {
+    position: relative;
+    text-align: center;
+    height: 80px;
+    top: 10px;
+    color: #2774ba;
+    font-size: 40px;
+}
 
-    .wrapper-body .contenido .datos ul{
-        position: relative;
-        margin: 0 auto;
-        width: 750px;
-        height: 200px;
-        text-align: justify;
-        letter-spacing: 1px;
-    }
+.wrapper-body .contenido .datos ul {
+    position: relative;
+    margin: 0 auto;
+    width: 750px;
+    height: 200px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
 
-        .wrapper-body .contenido .datos ul li{
-            text-decoration-line: inherit;
-            text-align: justify;
-        }
+.wrapper-body .contenido .datos ul li {
+    text-decoration-line: inherit;
+    text-align: justify;
+}
 
-.wrapper-body .contenido .datos .pikapika{
+.wrapper-body .contenido .datos .pikapika {
     position: relative;
     height: 350px;
     width: 100%;
     margin: 0 auto;
 }
 
-    .wrapper-body .contenido .datos .pikapika img{
-        position: relative;
-        width: 290px;
-        height: 260px;
-        margin: auto;
-        display: block;
-        animation: ladoAlado 2s infinite;
-    }
+.wrapper-body .contenido .datos .pikapika img {
+    position: relative;
+    width: 290px;
+    height: 260px;
+    margin: auto;
+    display: block;
+    animation: ladoAlado 2s infinite;
+}
 
 @keyframes tambaleado {
     from {
@@ -176,7 +229,9 @@ body {
 
     50% {
         rotate: -15deg;
-    } to {
+    }
+
+    to {
         rotate: 5deg;
     }
 }
@@ -195,8 +250,9 @@ body {
     100% {
         right: -100px;
         rotate: -15deg;
-    } to {
+    }
+
+    to {
         rotate: 10deg;
     }
 }
-
