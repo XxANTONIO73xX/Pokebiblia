@@ -32,12 +32,23 @@ body{
         position: relative;
         height: auto;
         top: 20px;
+        width: 100%;
+        height: 1200px;
+    }
+
+    .contenedor main .inicio_pokemon .descripcion {
+        width: 100%;
+        top: 60px;
+        left: 0;
+        height: 1150px;
+        color: rgb(55, 20, 78);
     }
 
     .contenedor main .principales {
         position: relative;
         height: auto;
-        top: 1750px;
+        top: 20px;
+        text-align : center;
     }
 
     .contenedor main .generaciones {
@@ -185,6 +196,11 @@ body{
                 width: 80%;
             }
             /*Diseñp para tabla debajo de juegos principales*/
+
+            .tablita {
+                width: 100%;
+
+            }
             table th {
                 width: 7.5em;
             }
@@ -192,6 +208,7 @@ body{
             table {
                 border-collapse:collapse;
                 text-align: center;
+                position: relative;
             }
             .blanca{
                 background-color: #FFFFFF
@@ -273,82 +290,183 @@ body{
                     height: 105px;
                 }
             }
-/*
-.titulos{
-    color: rgb(214, 235, 76);
-    font-size: 40px;
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 1000PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 1000px) {
+    .contenedor {
+        width: 90%;
+        height: 900px;
+        transition: 0.5s;
+    }
+
+    .contenedor main article .inicio_pokemon {
+        height: 1300px;
+    }
+
+    .contenedor main article .generaciones {
+        text-align: center;
+    }
 }
 
-#chichi{
-    height: 1100px;
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 850PX ----------------------------------------------------*/
+
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 800PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 800px) {
+    .contenedor main article .inicio_pokemon {
+        height: 1600px;
+        transition: 0.5s;
+    }
+
+    .contenedor main article .generaciones {
+        position: relative;
+        top: 50px;
+    }
+
+    .contenedor main article .generaciones .juegos_box {
+        width: 90%;
+    }
 }
 
-main article .primera .juegos,
-main article .segunda .juegos,
-main article .tercera .juegos,
-main article .quinta .juegos,
-main article .sexta .juegos,
-main article .septima .juegos,
-main article .octava .juegos,
-main article .novena .juegos,
-main article .cuarta .juegos {
-    width: 770px;
-    height: 800px;
-    background: linear-gradient(180deg, rgb(187, 217, 223) 0%, rgba(255, 255, 255, 1) 100%);
-    border: 10px solid;
-    border-color: #FFFFFF;
-    position: relative;
-    margin: 0 auto;
-    top: 6px;
-    right: 0px;
-    border-radius: 5px;
-    box-shadow: -1px 3px 18px -1px rgba(0, 0, 0, 0);
-    color: #3b6b73;
-    padding: 30px;
-    text-align: center;
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 750PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 750px) {
+    .contenedor main article .inicio_pokemon {
+        height: 1700px;
+        transition: 0.5s;
+    }
 }
 
-main article .tercera .juegos {
-    height: 1200px;
-}
-main article .cuarta .juegos {
-    height: 1200px;
-}
-main article .quinta .juegos {
-    height: 1000px;
-}
-main article .sexta .juegos {
-    height: 1005px;
-}
-main article .septima .juegos {
-    height: 1250px;
-}
-main article .octava .juegos {
-    height: 800px;
-}
-main article .novena .juegos {
-    height: 600px;
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 700PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 700px) {
+    .contenedor main article .inicio_pokemon {
+        height: 1800px;
+        transition: 0.5s;
+    }
 }
 
-.juegos .img_tamano .imagenes{
-    position: relative;
-    width: 50%;
-    height: 400px;
-    float: left;
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 650PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 650px) {
+    .contenedor main article .inicio_pokemon {
+        height: 2000px;
+        transition: 0.5s;
+    }
+
+    .contenedor main article .generaciones .juegos_box .info_juegos .juego {
+        width: 90%;
+        height: 150px;
+    }
+
+    .contenedor main article .generaciones .juegos_box .info_juegos .juego .juego_name {
+        font-size: 25px;
+    }
+
+    .contenedor main article .generaciones .juegos_box .info_juegos .juego p {
+        top: 20px;
+        font-size: 15px;
+        line-height: 0.96;
+    }
+
+    .contenedor main article .primera,
+    .contenedor main article .novena,
+    .contenedor main article .segunda {
+        height: 980px;
+    }
+
+    .contenedor main article .octava {
+        height: 1150px;
+    }
+
+    .contenedor main article .tercera,
+    .contenedor main article .sexta,
+    .contenedor main article .quinta {
+        height: 1150px;
+    }
+
+    .contenedor main article .septima,
+    .contenedor main article .cuarta {
+        height: 1350px;
+    }
 
 }
-.juegos .img_tamano .imagenes img {
-    width: 200px;
-    height: 186px;
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 600PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+    .contenedor main article .inicio_pokemon {
+        height: 2100px;
+    }
+
+    .contenedor main article .principales .tablita {
+        overflow-x: scroll;
+    }
+    .contenedor main article .principales table {
+        width: 100px;
+        -webkit-overflow-scrolling: scroll;
+    }
 }
 
-.juegos .img_tamano .texto{
-    position: relative;
-    width: 50%;
-    height: 400px;
-    float: left;
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 550PX ----------------------------------------------------*/
 
-    text-align: center;
-    font-size: 45px;
+@media only screen and (max-width: 550px) {
+    .contenedor main article .inicio_pokemon {
+        height: 2400px;
+    }
 }
 
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 500PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 500px) {
+    .contenedor main article .inicio_pokemon {
+        height: 2600px;
+    }
+}
+
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 450PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 450px) {
+    .contenedor main article .inicio_pokemon {
+        height: 2900px;
+    }
+
+    .contenedor main article .generaciones .juegos_box .info_juegos .juego {
+        height: 140px;
+    }
+
+    .contenedor main article .generaciones .juegos_box .info_juegos .juego .juego_name {
+        font-size: 20px;
+    }
+    
+    .contenedor main article .generaciones .juegos_box .info_juegos .juego p {
+        top: 20px;
+        font-size: 12px;
+        line-height: 0.96;
+    }
+
+    .contenedor main article .septima,
+    .contenedor main article .cuarta {
+        height: 1410px;
+    }
+
+}
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 400PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 400px) {
+    .contenedor main article .inicio_pokemon {
+        height: 3100px;
+    }
+}
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 350PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 400px) {
+    .contenedor main article .inicio_pokemon {
+        height: 3400px;
+    }
+}
