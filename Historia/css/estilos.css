@@ -387,6 +387,7 @@ body {
     .wrapper-body .contenido .pokemon .img-torterra {
         position: absolute;
         float: left;
+        top: 230px;
         left: 0;
         right: 0;
         margin-left: auto;
