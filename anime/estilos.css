@@ -32,7 +32,7 @@ article{
 
 .contenido{
     margin: 0 auto;
-    width: 70%;
+    width: 1000px;
     height: auto;
     background-color: rgb(173, 187, 255);
     box-shadow: -1px -2px 30px 6px rgba(0,0,0,0.75);
@@ -222,3 +222,218 @@ h4{
 .article-t23{
     height: 650px;
 }
+
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 1000PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 1000px) {
+    .contenido {
+        width: 90%;
+        transition: 0.25s;
+    }
+
+    .contenido .que_son {
+        width: 97%;
+        height: 600px;
+    }
+
+    .contenido .que_son .info {
+        width: 100%;
+    }
+
+    .contenido .tipos_pokemon .que_son  img {
+        position: relative;
+        top: 20px;
+        left: 230px;
+        float: none;
+        margin-right: 0;
+        width: 300px;
+    }
+
+    .contenido .anime-section article img {
+        width: 100%;
+    }
+
+    .contenido .personajes {
+        position: relative;
+        height: 550px;
+        transition: 0.24s;
+    }
+}
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 750PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 750px) {
+
+    .contenido .que_son {
+        width: 97%;
+        height: 700px;
+    }
+
+    .contenido .tipos_pokemon .que_son  img {
+        left: 120px;
+        transition: 0.25s;
+    }
+
+    .contenido .series section h3 {
+        text-align: center;
+    }
+
+    .contenido .series section .portada {
+        width: 250px;
+        position: relative;
+        left: 136px;
+    }
+
+    .contenido .series section .info {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .contenido .series .peliculas {
+        text-align: center;
+    }
+
+    .contenido .series .peliculas ol li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contenido .series .peliculas ol li img {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .contenido .series section .portada {
+        left: 135px;
+    }
+}
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 630PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 630px) {
+    .contenido .personajes {
+        position: relative;
+        height: 750px;
+        transition: 0.24s;
+    }
+
+    .contenido .tipos_pokemon .que_son  img {
+        width: 250px;
+        left: 100px;
+    }
+
+    .contenido .series section .portada {
+        left: 85px;
+    }
+}
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 520PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 520px) {
+    .contenido .personajes {
+        position: relative;
+        height: 1050px;
+        transition: 0.24s;
+    }
+
+    .contenido .personajes .texto_personajes {
+        height: 1050px;
+    }
+
+    .contenido .personajes .texto_personajes img {
+        position: absolute;
+        width: 100%;
+    }
+
+    .contenido .personajes .texto_personajes .info {
+        position: relative;
+        width: 100%;
+        top: 250px;
+    }
+    .contenido .personajes .texto_personajes .info h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenido .que_son {
+        height: 800px;
+    }
+
+    .contenido .tipos_pokemon .que_son  img {
+        width: 200px;
+        left: 100px;
+    }
+
+    .contenido .series section .portada {
+        left: 45px;
+    }
+}
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 450PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 450px) {
+    .contenido .personajes {
+        position: relative;
+        height: 1300px;
+    }
+
+    .contenido .tipos_pokemon .que_son  img {
+        left: 60px;
+        transition: 0.25s;
+    }
+
+    .contenido .tipos {
+        position: relative;
+        top: 80px;
+    }
+
+    .contenido .series section .portada {
+        left: 15px;
+    }
+
+}
+
+/*---------------------------------------------------- MEDIDAS MAX-WIDTH = 400PX ----------------------------------------------------*/
+
+@media only screen and (max-width: 400px) {
+    .contenido .personajes {
+        position: relative;
+        height: 1300px;
+        transition: 0.24s;
+    }
+
+    .contenido .que_son {
+        height: 800px;
+    }
+
+    .contenido .tipos_pokemon {
+        height: 3000px;
+    }
+
+    .contenido .tipos_pokemon .que_son  img {
+        left: 40px;
+        transition: 0.25s;
+    }
+
+    .contenido .tipos {
+        position: relative;
+        top: 130px;
+    }
+
+    .contenido .tipos h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenido .Pokemon {
+        position: relative;
+        top: 130px;
+    }
+
+    .contenido .series section .portada {
+        left: -8px;
+    }
+
+}
+
