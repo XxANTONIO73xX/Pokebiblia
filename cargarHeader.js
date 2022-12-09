@@ -29,7 +29,7 @@ document.body.innerHTML = `
 
 window.addEventListener('load', function(){
     musicaRomantica = document.getElementById("musicaRomantica");
-    musicaRomantica.volume = 0.2;
+    musicaRomantica.volume = 0.05;
 })
 
 hamburguesa = document.querySelector(".hamburger-button");
